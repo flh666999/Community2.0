@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 @Mapper
 public interface DiscussPostMapper {
-    //public List<DiscussPost> selectDiscussPosts(@Param("userId") int userId,@Param("offset") int offset,@Param("limit") int limit);
-    public List<DiscussPost> selectDiscussPosts(int userId,int offset,int limit);
-    public int selectDiscussPostRows(@Param("userId")int userId);
+    List<DiscussPost> selectDiscussPosts(@Param("userId") int userId,@Param("offset") int offset,@Param("limit") int limit);
+    //public List<DiscussPost> selectDiscussPosts(int userId,int offset,int limit);//这里这么写还是不行
+    int selectDiscussPostRows(@Param("userId")int userId);
 }
